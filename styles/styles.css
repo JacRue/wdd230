@@ -20,18 +20,32 @@ footer {
     background-color: rgb(10, 216, 216);
     border-radius: 8px;
     text-align: center;
-    margin: 275px;
+    margin: 175px;
     margin-left: 500px;
     width: 50%;
     height: 125px
 }
 
+h1 {
+    font-size: 350%;
+    font-style: bold;
+    font-family: 'Cinzel', serif;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Tangerine', cursive;
+}
+
 h2 {
     margin-left: 500px;
-    font-size: 200%
+    font-size: 275%;
+    font-family: 'Cinzel', serif;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Tangerine', cursive;
 }
 
 ul {
     margin-left: 500px;
-    font-size: 175%
+    font-size: 250%;
+    font-family: 'Cinzel', serif;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Tangerine', cursive;
 }
