@@ -66,6 +66,13 @@ h1, h2 {
     color:aliceblue
 }
 
+h4 {
+    font-family: 'Roboto Slab', serif;
+     
+}
+
 p {
     font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: larger;
 }
