@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Righteous&display=swap');
+
+
+
+header {
+    display: flex;
+    background-color: aqua;
+    align-items: center;
+    padding: 5px 0;
+    justify-content: center;
+}
+
+.logo_img {
+    width: 80px;
+    height: auto;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+
+.m {
+    font-style: italic;
+}
+
+nav {
+    display: flex;
+    
+}
