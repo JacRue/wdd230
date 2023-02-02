@@ -1,31 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Righteous&display=swap');
 
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+}
 
 header {
-    display: flex;
-    background-color: #17a0df;
+    background: #17a0df;
+    color: #e3ebef;
     align-items: center;
-    padding: 5px 0;
-    justify-content: center;
+    padding: 10px;
+    text-align: center;
     border-radius: 8px;
+    margin: 0;
 }
 
 .logo_img {
-    width: 150px;
-    height: auto;
+    width: 15rem;
     border-radius: 8px;
-    margin: 8px;
-}
-
-.headings {
-    display: flex;
-    flex-direction: column;
-}
-
-.headings h1 {
-    font-size: 1.6rem;
-    margin: 0 0 0 17px;
 }
 
 .m {
@@ -34,9 +29,21 @@ header {
 }
 
 nav {
+    background-color: #1d80e4;
+    font-size: 1.2em;
     display: flex;
-    margin: 10px;
+}
 
+nav a {
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #e3ebef;
+}
+
+nav a:hover {
+    color: #e3ebef;
+    background-color: #0a4268;
 }
 
 /* Hamburger start-------------------------*/
@@ -72,14 +79,14 @@ nav {
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #e3ebef;
+    color: grey;
 }
 
 /* Style the active link (or home/logo) */
 .active {
-    background-color: #1d80e4;
-    color: white;
+    background-color: #0a4268;
+    color: #e3ebef;
 }
 
 /* Hamburger end-------------------------*/
@@ -93,60 +100,52 @@ h1 {
 
 .flexbox-container {
     display: flex;
-    flex-direction: column;
-    height: 55rem;
-    align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .flexbox-item {
-    width: 200px;
     margin: 5px;
     border: 3px solid #333;
     background-color: #1d80e4;
     flex-grow: 1;
     width: 25rem;
+    height: 200px;
 }
 
-.flexbox-item-1 {
-    min-height: 300px;
-}
-
-.flexbox-item-2 {
-    min-height: auto;
-}
-
-.flexbox-item-3 {
-    min-height: auto;
-}
-
-.flexbox-item-4 {
-    min-height: auto;
-}
-
-.flexbox-item-5 {
-    min-height: auto;
-}
-
-.spotlight-1 {
-    min-height: auto;
-}
-
-.spotlight-2 {
-    min-height: auto;
-}
 
 footer {
-    background-color: #0a4268;
+    background: #0a4268;
     border-radius: 8px;
     text-align: center;
-    height: 125px;
     font-weight: bold;
     color: #e3ebef;
-    display: flex;
-    justify-content: center;
+    padding: 20px;
 }
 
-footer .social img {
+.spotlight-container {
+    border: solid;
+    background-color: grey;
+}
+
+.social {
     padding-top: 15px;
+}
+
+.social_img {
+    border-radius: 8px;
+}
+
+@media (max-width: 426px) {
+
+    nav,
+    nav a,
+    nav a:link,
+    nav a:visited,
+    nav a:hover {
+        display: none;
+    }
+    .spotlight-3 {
+        display: none;
+    }
 }

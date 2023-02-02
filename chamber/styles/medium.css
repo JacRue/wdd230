@@ -1,23 +1,13 @@
 /* Tablet Views ******************************/
-@media only screen and (min-width: 37.5em) {
-	main {
-		grid-template-columns: 1fr 1fr;
-	}
-
-	main section:nth-child(2) {
-		display: block;
-	}
-
-	main section:nth-child(3) {
-		grid-column: span 2;
-	}
-
-	main section picture {
-		display: block;
-	}
-	main section picture img {
-		width: 100%;
+@media only screen and (min-width: 426px) {
+	.logo_img {
+		width: 250px;
 		height: auto;
-		border: 1px solid #bbb;
+		border-radius: 8px;
+		margin: 8px;
 	}
+	.spotlight-3 {
+        display: none;
+    }
+
 }

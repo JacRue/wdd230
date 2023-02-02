@@ -1,11 +1,15 @@
 /* Desktop Views ****************************/
-@media only screen and (min-width: 60em) {
-	main {
-		grid-template-columns: 1fr 1fr 1fr;
-        grid-row:span 1fr 1fr 1fr
+@media only screen and (min-width: 768px) {
+	.logo_img {
+		width: 250px;
+		height: auto;
+		border-radius: 8px;
+		margin: 8px;
 	}
-	
-	main section:nth-child(3) {
-		grid-column: span 1;
+	.flexbox-container {
+		flex-direction: row;
+	}
+	.flexbox-4, .flexbox-5 {
+		height: 300px;
 	}
 }

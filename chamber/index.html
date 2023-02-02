@@ -17,58 +17,68 @@
         <section>
             <h1>Baytown Chambers of Commerce</h1>
             <div class="m">City of Many Waters</div>
-            <nav>
+        </section>
+        <div class="social">
+            <a href="https://facebook.com">
+                <img class="social_img" src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com">
+                <img class="social_img" src="images/twitter.png" alt="twitter icon">
+            </a>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Contact</a>
+        </nav>
+        <!-- Simulate a smartphone / tablet -->
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active">Menu</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
                 <a href="index.html">Home</a>
                 <a href="#">Discover</a>
                 <a href="#">Directory</a>
                 <a href="#">Join</a>
                 <a href="#">Contact</a>
-            </nav>
-            <div class="social">
-                <a href="https://facebook.com">
-                    <img src="images/facebook.png" alt="fb icon">
-                </a>
-                <a href="https://twitter.com">
-                    <img src="images/twitter.png" alt="twitter icon">
-                </a>
-                <!-- Simulate a smartphone / tablet -->
-                <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-                <link rel="stylesheet"
-                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-                <!-- Top Navigation Menu -->
-                <div class="topnav">
-                    <a href="#home" class="active">Menu</a>
-                    <!-- Navigation links (hidden by default) -->
-                    <div id="myLinks">
-                        <a href="#news">News</a>
-                        <a href="#contact">Contact</a>
-                        <a href="#about">About</a>
-                    </div>
-                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-                <!-- End smartphone / tablet look -->
             </div>
-        </section>
-    </header>
-    <main>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- End smartphone / tablet look -->
         <div class="flexbox-container">
-            <div class="flexbox-item flexbox-1">Hero with site name and call</div>
-            <div class="flexbox-item flexbox-2">Event</div>
-            <div class="flexbox-item flexbox-3">Weather</div>
-            <div class="flexbox-item flexbox-4">New Release</div>
+            <div class="left_side">
+                <div class="flexbox-item flexbox-1">Hero with site name and call</div>
+                <div class="flexbox-item flexbox-2">Event</div>
+                <div class="flexbox-item flexbox-3">Weather</div>
+            </div>
+            <div class="center">
+                <div class="flexbox-item flexbox-4">New Release</div>
+                <div class="flexbox-item flexbox-5">Join</div>
+            </div>
             <div class="spotlight-container">
-                <div class="flexbox-item spotlight-1">Spotlight 1</div>
-                <div class="flexbox-item spotlight-1">Spotlight 2</div>
+                <div class="right_side">
+                    <div class="flexbox-item spotlight-1">Spotlight 1</div>
+                    <div class="flexbox-item spotlight-2">Spotlight 2</div>
+                    <div class="flexbox-item spotlight-3">Spotlight 3</div>
+                </div>
             </div>
         </div>
     </main>
     <footer>
-        <h3>&copy;2023 Baytown Chamber | Jacob Ruesch | WDD 230 Project | last modified: <p id="updated"></p>
-        </h3>
+        <h3>&copy;2023 Baytown Chamber | Jacob Ruesch | WDD 230 Project | last modified:
+        </h3><p id="updated"></p>
     </footer>
     <script src="scripts/script.js"></script>
 </body>
