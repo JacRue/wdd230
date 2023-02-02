@@ -11,7 +11,7 @@ function myFunction() {
   }
 }
 
-window.onload = function() {
+window.onload = function () {
   var today = new Date();
   var date = today.toDateString();
   document.getElementById("date").innerHTML = date;
