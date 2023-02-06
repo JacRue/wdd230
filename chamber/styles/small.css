@@ -5,7 +5,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
 }
 
 header {
@@ -90,29 +90,24 @@ nav a:hover {
 }
 
 /* Hamburger end-------------------------*/
-main {
+/* main {
     align-items: stretch;
-}
+} */
 
 h1 {
     color: #e3ebef;
 }
 
 .flexbox-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    display: block;
 }
 
 .flexbox-item {
     margin: 5px;
     border: 3px solid #333;
     background-color: #1d80e4;
-    flex-grow: 1;
-    width: 25rem;
-    height: 200px;
+    /* height: 200px; */
 }
-
 
 footer {
     background: #0a4268;
