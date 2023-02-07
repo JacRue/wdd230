@@ -1,3 +1,21 @@
+@media (max-width: 426px) {
+
+    nav,
+    nav a,
+    nav a:link,
+    nav a:visited,
+    nav a:hover {
+        display: none;
+    }
+
+    .spotlight-3 {
+        display: none;
+    }
+    .Hero-img {
+		width: 100%;
+	}
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Righteous&display=swap');
 
 * {
@@ -131,16 +149,20 @@ footer {
     border-radius: 8px;
 }
 
-@media (max-width: 426px) {
+.joinButton {
+    text-align: center;
+    background-color: gold;
+    color: black;
+    font-weight: bolder;
+    padding: 10px 20px;
+    margin-top: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.75);
+}
 
-    nav,
-    nav a,
-    nav a:link,
-    nav a:visited,
-    nav a:hover {
-        display: none;
-    }
-    .spotlight-3 {
-        display: none;
-    }
+.joinButton:hover {
+    background-color: #75dd7e;
+    cursor: pointer;
 }
