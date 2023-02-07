@@ -25,7 +25,7 @@ if (dayOfWeek == 1 || dayOfWeek == 2) {
   // Create the banner element
   var banner = document.createElement("div");
   banner.innerHTML =
-    "Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+    "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
   banner.style.backgroundColor = "gold";
   banner.style.padding = "10px";
   banner.style.textAlign = "center";
