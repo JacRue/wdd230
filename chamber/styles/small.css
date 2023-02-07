@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Righteous&display=swap');
 @media (max-width: 426px) {
 
     nav,
@@ -15,8 +16,6 @@
 		width: 100%;
 	}
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Righteous&display=swap');
 
 * {
     box-sizing: border-box;
