@@ -1,5 +1,5 @@
 /* Tablet Views ******************************/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 700px) {
 	.logo_img {
 		width: 250px;
 		height: auto;

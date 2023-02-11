@@ -34,18 +34,3 @@ if (dayOfWeek == 1 || dayOfWeek == 2) {
   document.body.insertBefore(banner, document.body.firstChild);
 }
 
-const API_KEY = "7813090657fa5e84fb9ec1367a73911b";
-const city = "Baytown";
-
-const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
-
-fetch(apiUrl)
-  .then((response) => response.json())
-  .then((data) => {
-    const temperature = data.main.temp;
-    const weather = data.weather[0].description;
-
-    const html = `<p>Temperature in ${city}: ${temperature}°C</p><p>Weather: ${weather}</p>`;
-
-    document.querySelector("#weather").innerHTML = html;
-  });

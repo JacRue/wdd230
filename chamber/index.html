@@ -28,8 +28,6 @@
             </a>
         </div>
         <h3 id="date"></h3>
-    </header>
-    <main>
         <nav>
             <a href="index.html">Home</a>
             <a href="#">Discover</a>
@@ -37,6 +35,9 @@
             <a href="#">Join</a>
             <a href="#">Contact</a>
         </nav>
+    </header>
+    <main>
+
         <!-- Simulate a smartphone / tablet -->
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
         <link rel="stylesheet"
@@ -62,7 +63,11 @@
 
         <div class="flexbox-container">
             <div class="flexbox-item flexbox-1">
-                <img class="Hero-img" src="images/fred_bridge.jpg" alt="Image of Fred Bridge">
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/wdd230-org.jpg"1x alt="large">
+                    <source media="(min-width: 700px)" srcset="images/wdd230-org.jpg"1x alt="medium">
+                    <img class="Hero-img" src="images/wdd230-org.jpg" alt="Image of Fred Bridge">
+                </picture>
                 <a href="#"></a><button class="joinButton" type="button">Join the Chamber</button>
                 <script src="banner.js"></script>
             </div>
@@ -74,6 +79,7 @@
             </div>
             <div class="flexbox-item flexbox-3">Weather
                 <div id="weather"></div>
+                <script src="scripts/windchill.js"></script>
             </div>
 
             <div class="flexbox-item flexbox-4">News Release
