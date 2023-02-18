@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson7 Progressive Loading of Images with Placeholder script</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <main>
+        <h1>Progressive Loading (Images)</h1>
+        <picture>
+            <img src="https://placekitten.com/300/400" alt="Kitten">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/placeholder.png" data-src="https://picsum.photos/300/400" alt="Random Image"
+                loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://loremflickr.com/placeholder.png" data-src="https://loremflickr.com/300/400" alt="Random Image"
+                loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://Placeholder.com/placeholder.png" data-src="https://Placeholder.com/300/400" alt="Random Image"
+                loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://loremflickr.com/placeholder.png" data-src="https://loremflickr.com/300/400" alt="Random Image"
+                loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://loremflickr.com/placeholder.png" data-src="https://loremflickr.com/300/400" alt="Random Image"
+                loading="lazy">
+        </picture>
+    </main>
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
