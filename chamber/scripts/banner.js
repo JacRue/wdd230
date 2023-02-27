@@ -18,5 +18,5 @@ if (dayOfWeek == 1 || dayOfWeek == 2) {
   banner.style.textAlign = "center";
 
   // Add to the Hero
-  document.body.insertBefore(banner, document.body.firstChild);
+  //document.body.insertBefore(banner, document.body.firstChild);
 }
