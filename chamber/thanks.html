@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks Page</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <header>
+        <img class=logo_img src="images/Baytown_Chamber_of_Commerce_Water.png" alt="Logo image">
+        <section>
+            <h1>Baytown Chambers of Commerce</h1>
+            <div class="m">City of Many Waters</div>
+        </section>
+        <div class="social">
+            <a href="https://facebook.com">
+                <img class="social_img" src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com">
+                <img class="social_img" src="images/twitter.png" alt="twitter icon">
+            </a>
+        </div>
+        <h3 id="date"></h3>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="#">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="#">Contact</a>
+        </nav>
+        <!-- Simulate a smartphone / tablet -->
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active">Menu</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="#">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="#">Contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- End smartphone / tablet look -->
+    </header>
+    <div class="ThanksDiv">
+        <main class="ThanksMain">
+            <h2 class="ThanksH2">Join Application</h2>
+            <p class="ThanksP">
+                Your Application has been submitted, thank you for your time and we look forward to reaching out to you
+                soon....
+            </p>
+        </main>
+    </div>
+    <footer>
+        <h3>&copy;2023 Baytown Chamber | Jacob Ruesch | WDD 230 Project | last modified:
+        </h3>
+        <p id="updated"></p>
+    </footer>
+    <script src="scripts/formLoadTime.js"></script>
+    <script src="scripts/lastVisit.js"></script>
+    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+
+</html>
