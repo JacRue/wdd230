@@ -80,12 +80,13 @@
 	.ThanksH2 {
 		color: #04090c;
 		font-size: 2.5rem;
-		margin-left: 50px;
+		text-align: center;
 	}
 	
 	.ThanksP {
 		font-size: 1.5rem;
 		font-weight: bold;
+		text-align: center;
 	}
 
 }
