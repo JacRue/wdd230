@@ -22,6 +22,10 @@
     p {
         text-align: center;
     }
+
+    .list section {
+        display: none; /* smaller viewports only */
+    }
 }
 
 * {
@@ -68,6 +72,12 @@ nav a {
 nav a:hover {
     color: #e3ebef;
     background-color: #0a4268;
+}
+
+.Hsection {
+	border: 0;
+	padding: 0.5rem;
+	background-color: #17a0df;
 }
 
 /* Hamburger start-------------------------*/
@@ -294,4 +304,104 @@ form label.top input:required:valid {
 .ThanksP {
     font-size: 1rem;
     font-weight: bold;
+}
+
+/*-------------Directory Page----------------*/
+
+/* * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} */
+
+/* main {
+	margin: 0 auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	max-width: 800px;
+	background-color: #eee;
+	font-family: Roboto, Helvetica, sans-serif;
+} */
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #1d80e4;
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+article,
+section {
+	margin: 0.5rem;
+}
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: white;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+    background-color: #1d80e4;
+}
+
+.grid section {
+	flex-direction: column;
+	text-align: center;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.grid {
+	font-family: "Caveat", cursive;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+section {
+	font-size: 1.5rem;
+}
+
+section {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.9rem;
+}
+
+img {
+	height: 75px;
+	max-width: 100%; /* Images are jerks - Seattle*/
 }

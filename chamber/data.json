@@ -1,0 +1,76 @@
+{
+    "companies": [
+        {
+            "companyName": "Exxon Mobil Baytown",
+            "address": "3525 Decker Dr, Baytown, TX 77520",
+            "phone": "(281) 834-6161",
+            "url": "http://corporate.exxonmobil.com/",
+            "logo": "images/ExxonMobil.jpg",
+            "membership": ""
+        },
+        {
+            "companyName": "Enterprise Products",
+            "address": "4225 Decker Dr, Baytown, TX 77520",
+            "phone": "(713) 381-6500",
+            "url": "http://www.enterpriseproducts.com/",
+            "logo": "images/EnterpriseProducts.png",
+            "membership": ""
+        },
+        {
+            "companyName": "Chevron Phillips Chemical Co",
+            "address": "9500 East Fwy, Baytown, TX 77521",
+            "phone": "(281) 421-6500",
+            "url": "http://www.cpchem.com/baytown",
+            "logo": "images/ChevronPhillips.jpg",
+            "membership": ""
+        },
+        {
+            "companyName": "Pirates Bay Waterpark",
+            "address": "5300 E Rd, Baytown, TX 77521",
+            "phone": "(281) 422-1150",
+            "url": "https://www.baytown.org/877/Pirates-Bay-Waterpark",
+            "logo": "images/PiratesBay1.png",
+            "membership": ""
+        },
+        {
+            "companyName": "Houston Methodist Baytown Hospital",
+            "address": "4401 Garth Rd, Baytown, TX 77521",
+            "phone": "(281) 420-8600",
+            "url": "https://www.houstonmethodist.org/locations/baytown/?utm_source=gmb&utm_medium=organic&utm_campaign=all_front_door_gmb&utm_content=website-click",
+            "logo": "images/HMBaytownHospital.webp",
+            "membership": ""
+        },
+        {
+            "companyName": "Buc-ee's",
+            "address": "4080 East Fwy, Baytown, TX 77521",
+            "phone": "(979) 238-6390",
+            "url": "http://www.buc-ees.com/",
+            "logo": "images/buc-ees.jpg",
+            "membership": ""
+        },
+        {
+            "companyName": "Baytown Ford",
+            "address": "4110 I-10, Baytown, TX 77521",
+            "phone": "(855) 760-2180",
+            "url": "https://www.baytownford.com/?utm_source=google&utm_campaign=GoogleLocalListing&utm_medium=organic",
+            "logo": "images/BFord.png",
+            "membership": ""
+        },
+        {
+            "companyName": "H-E-B",
+            "address": "6430 Garth Rd, Baytown, TX 77521",
+            "phone": "(281) 421-5300",
+            "url": "https://www.heb.com/heb-store/US/tx/baytown/baytown-h-e-b-742?utm_source=google&utm_medium=organic&utm_campaign=gmb_stores",
+            "logo": "images/HEB_curbside_logos.jpg",
+            "membership": ""
+        },
+        {
+            "companyName": "Texas Roadhouse",
+            "address": "6615 Garth Rd, Baytown, TX 77521",
+            "phone": "(281) 421-3060",
+            "url": "https://www.texasroadhouse.com/locations/411-baytowntx",
+            "logo": "images/TexasRoadhouse.jpg",
+            "membership": ""
+        }
+    ]
+}
