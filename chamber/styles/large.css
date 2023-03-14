@@ -95,5 +95,8 @@
 		text-align: center;
 	}
 
-	/* *{border: 2px solid pink; } */
-}
+	.flexbox-3 {
+		padding-top: 50px;
+	}
+	}
+

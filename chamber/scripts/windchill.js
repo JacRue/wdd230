@@ -20,17 +20,18 @@ fetch(apiUrl)
 
       const weather = data.weather[0].description;
 
-      document.querySelector("#weather").innerHTML = `
-        <p>Temperature: ${temperature.toFixed(2)}°F</p>
+      document.querySelector("#weather").innerHTML = ` 
+      <p>Temperature: ${temperature.toFixed(2)}°F</p>
         <p>Weather: ${weather}</p>
         <p>Wind speed: ${windSpeed.toFixed(2)} mph</p>
         <p>Wind chill: ${windChill.toFixed(2)}°F</p>
       `;
     } else {
-      document.querySelector("#weather").innerHTML = `
-        <p>Temperature: ${temperature.toFixed(2)}°F</p>
+      document.querySelector("#weather").innerHTML = ` 
+      <p>Temperature: ${temperature.toFixed(1)}°F</p>
         <p>Wind speed: ${windSpeed.toFixed(2)} mph</p>
         <p>Wind chill: N/A</p>
       `;
     }
   });
+  

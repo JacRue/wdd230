@@ -64,22 +64,30 @@
         <div class="flexbox-container">
             <div class="flexbox-item flexbox-1">
                 <picture>
-                    <source media="(min-width: 1000px)" srcset="images/fred_bridge.png"1x alt="large">
-                    <source media="(min-width: 700px)" srcset="images/fred_bridge.png"1x alt="medium">
+                    <source media="(min-width: 1000px)" srcset="images/fred_bridge.png" 1x alt="large">
+                    <source media="(min-width: 700px)" srcset="images/fred_bridge.png" 1x alt="medium">
                     <img class="Hero-img" src="images/fred_bridge.png" alt="Image of Fred Bridge">
                 </picture>
                 <a href="#"></a><button class="joinButton" type="button">Join the Chamber</button>
                 <script src="scripts/banner.js"></script>
             </div>
-            <div class="flexbox-item flexbox-2">Event
+            <div class="flexbox-item flexbox-2">
+                <h3>Baytown Events</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit omnis impedit maiores maxime! Corrupti
                     atque eveniet odio quos. Nihil recusandae repellendus aliquam fugit, ea error in rem totam veniam
                     ad?
                 </p>
             </div>
-            <div class="flexbox-item flexbox-3">Weather
+            <div class="flexbox-item flexbox-3">
+                <h3>Baytown Weather Forcast</h3>
                 <div id="weather"></div>
-                <script src="scripts/windchill.js"></script>
+                <p>Temperature in Baytown, Texas is currently</p>
+                    <span id="current-temp"></span> &deg;F
+                <p>Current conditions are</p>
+                <figure>
+                    <img src="" alt="" id="weather-icon" />
+                    <figcaption></figcaption>
+                </figure>
             </div>
 
             <div class="flexbox-item flexbox-4">News Release
@@ -118,6 +126,7 @@
         </h3>
         <p id="updated"></p>
     </footer>
+    <script src="scripts/weather.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 
