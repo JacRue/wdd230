@@ -2,6 +2,7 @@
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
+const windSpeed = document.querySelector("#wind-speed");
 
 const url =
   "https://api.openweathermap.org/data/2.5/weather?q=Baytown&units=imperial&appid=cde4215b9acd1fa49459c7f0ca207a86";
@@ -32,6 +33,25 @@ function displayResults(weatherData) {
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", desc);
   captionDesc.textContent = desc;
+
+  windSpeed.innerHTML = `Wind Speed: ${weatherData.wind.speed} mph`;
+
+  const windChill = document.querySelector("#wind-chill");
+  const temperature = weatherData.main.temp;
+  const windSpeedValue = weatherData.wind.speed;
+  const windChillValue = calculateWindChill(temperature, windSpeedValue);
+  windChill.innerHTML = `Wind Chill: ${windChillValue.toFixed(0)}&deg;F`;
+
+  function calculateWindChill(temperature, windSpeed) {
+    const windChill =
+      35.74 +
+      0.6215 * temperature -
+      35.75 * Math.pow(windSpeed, 0.16) +
+      0.4275 * temperature * Math.pow(windSpeed, 0.16);
+    return windChill;
+  }
+  console.log(document.getElementById("weatherResults"));
+  document.getElementById("weatherResults").innerHTML = html;
 }
 
 apiFetch();
