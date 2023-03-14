@@ -145,10 +145,11 @@ h1 {
 }
 
 .flexbox-3 {
-    background: url(/chamber/images/lightWeatherImg.jpg);
     text-align: center;
     font-weight: bold;
-    /* font-size: 25px; */
+    background-image: url(/chamber/images/weatherImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer {
