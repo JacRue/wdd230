@@ -1,10 +1,27 @@
 /* Tablet Views ******************************/
 @media only screen and (min-width: 700px) {
 	.logo_img {
-		width: 250px;
+		width: 25%;
 		height: auto;
 		border-radius: 8px;
 		margin: 8px;
+	}
+
+	.social {
+		display: flex;
+		justify-content: center;
+	}
+
+	.social a {
+		display: block;
+		margin: 0 2px;
+	}
+
+	.social_img {
+		border-radius: 8px;
+		width: 75%;
+		height: auto;
+		box-shadow: 4px 4px 5px 0px #04090c;
 	}
 
 	.flexbox-container {
@@ -14,7 +31,6 @@
 
 	.spotlight-container {
 		border: solid;
-		background-color: rgb(207, 202, 202);
 		grid-row: 3/4;
 		grid-column: 1/4;
 	}

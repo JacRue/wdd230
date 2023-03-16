@@ -13,28 +13,32 @@
 </head>
 
 <body>
-    <header>
-        <img class=logo_img src="images/Baytown_Chamber_of_Commerce_Water.png" alt="Logo image">
-        <section class="Hsection">
-            <h1>Baytown Chambers of Commerce</h1>
-            <div class="m">City of Many Waters</div>
-        </section>
-        <div class="social">
-            <a href="https://facebook.com">
-                <img class="social_img" src="images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com">
-                <img class="social_img" src="images/twitter.png" alt="twitter icon">
-            </a>
-        </div>
-        <h3 id="date"></h3>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="discover.html">Discover</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html">Join</a>
-            <a href="#">Contact</a>
-        </nav>
+    <div>
+        <header>
+            <img class=logo_img src="images/Baytown_Chamber_of_Commerce_Water.png" alt="Logo image">
+            <section class="Hsection">
+                <h1>Baytown Chambers of Commerce</h1>
+                <div class="m">City of Many Waters</div>
+                <h3 class="date" id="date"></h3>
+            </section>
+            <div class="social">
+                <a href="https://facebook.com">
+                    <img class="social_img" src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com">
+                    <img class="social_img" src="images/twitter.png" alt="twitter icon">
+                </a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="contactUs.html">Contact</a>
+            </nav>
+        </header>
+    </div>
+    <main>
         <!-- Simulate a smartphone / tablet -->
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
         <link rel="stylesheet"
@@ -49,7 +53,7 @@
                 <a href="discover.html">Discover</a>
                 <a href="directory.html">Directory</a>
                 <a href="join.html">Join</a>
-                <a href="#">Contact</a>
+                <a href="contactUs.html">Contact</a>
             </div>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -57,8 +61,6 @@
             </a>
         </div>
         <!-- End smartphone / tablet look -->
-    </header>
-    <main>
         <div class="menu">
             <button id="grid">⏹️Grid</button>
             <button id="list">📄List</button>
@@ -73,7 +75,7 @@
                         "phone": "(281) 834-6161",
                         "url": "http://corporate.exxonmobil.com/",
                         "logo": "images/ExxonMobil.jpg",
-                        "membership": ""
+                        "membership": "Gold"
                     },
                     {
                         "companyName": "Enterprise Products",
@@ -81,7 +83,7 @@
                         "phone": "(713) 381-6500",
                         "url": "http://www.enterpriseproducts.com/",
                         "logo": "images/EnterpriseProducts.png",
-                        "membership": ""
+                        "membership": "Gold"
                     },
                     {
                         "companyName": "Chevron Phillips Chemical Co",
@@ -89,7 +91,7 @@
                         "phone": "(281) 421-6500",
                         "url": "http://www.cpchem.com/baytown",
                         "logo": "images/ChevronPhillips.jpg",
-                        "membership": ""
+                        "membership": "Gold"
                     },
                     {
                         "companyName": "Pirates Bay Waterpark",
@@ -97,7 +99,7 @@
                         "phone": "(281) 422-1150",
                         "url": "https://www.baytown.org/877/Pirates-Bay-Waterpark",
                         "logo": "images/PiratesBay1.png",
-                        "membership": ""
+                        "membership": "Bronze"
                     },
                     {
                         "companyName": "Houston Methodist Baytown Hospital",
@@ -105,7 +107,7 @@
                         "phone": "(281) 420-8600",
                         "url": "https://www.houstonmethodist.org/locations/baytown/?utm_source=gmb&utm_medium=organic&utm_campaign=all_front_door_gmb&utm_content=website-click",
                         "logo": "images/HMBaytownHospital.webp",
-                        "membership": ""
+                        "membership": "Silver"
                     },
                     {
                         "companyName": "Buc-ee's",
@@ -113,7 +115,7 @@
                         "phone": "(979) 238-6390",
                         "url": "http://www.buc-ees.com/",
                         "logo": "images/buc-ees.jpg",
-                        "membership": ""
+                        "membership": "Bronze"
                     },
                     {
                         "companyName": "Baytown Ford",
@@ -121,7 +123,7 @@
                         "phone": "(855) 760-2180",
                         "url": "https://www.baytownford.com/?utm_source=google&utm_campaign=GoogleLocalListing&utm_medium=organic",
                         "logo": "images/BFord.png",
-                        "membership": ""
+                        "membership": "Silver"
                     },
                     {
                         "companyName": "H-E-B",
@@ -129,7 +131,7 @@
                         "phone": "(281) 421-5300",
                         "url": "https://www.heb.com/heb-store/US/tx/baytown/baytown-h-e-b-742?utm_source=google&utm_medium=organic&utm_campaign=gmb_stores",
                         "logo": "images/HEB_curbside_logos.jpg",
-                        "membership": ""
+                        "membership": "Bronze"
                     },
                     {
                         "companyName": "Texas Roadhouse",
@@ -137,9 +139,8 @@
                         "phone": "(281) 421-3060",
                         "url": "https://www.texasroadhouse.com/locations/411-baytowntx",
                         "logo": "images/TexasRoadhouse.jpg",
-                        "membership": ""
+                        "membership": "Bronze"
                     }
-
                 ]`
             console.log(JSON.parse(companies))
         </script>
@@ -149,14 +150,16 @@
                 <h3>Exxon Mobil Baytown</h3>
                 <p>3525 Decker Dr, Baytown, TX 77520</p>
                 <p>(281) 834-6161</p>
+                <p>Membership: Gold 🥇</p>
                 <a href="http://corporate.exxonmobil.com/" target="_blank">Details</a>
             </section>
 
             <section>
-                <img src="images/EnterpriseProducts.png" alt="Baytown Enterprise Products" />
+                <img src="images/EnterpriseProducts.jpg" alt="Baytown Enterprise Products" />
                 <h3>Enterprise Products</h3>
                 <p>4225 Decker Dr, Baytown, TX 77520</p>
                 <p>(713) 381-6500</p>
+                <p>Membership: Gold 🥇</p>
                 <a href="http://www.enterpriseproducts.com/" target="_blank">Details
                 </a>
             </section>
@@ -166,22 +169,25 @@
                 <h3>Chevron Phillips Chemical Co</h3>
                 <p>9500 East Fwy, Baytown, TX 77521</p>
                 <p>(281) 421-6500</p>
+                <p>Membership: Gold 🥇</p>
                 <a href="http://www.cpchem.com/baytown" target="_blank">Details</a>
             </section>
 
             <section>
-                <img src="images/PiratesBay1.png" alt="Baytown Pirates Bay Waterpark" />
+                <img src="images/PiratesBay1.jpg" alt="Baytown Pirates Bay Waterpark" />
                 <h3>Pirates Bay Waterpark</h3>
                 <p>5300 E Rd, Baytown, TX 77521</p>
                 <p>(281) 422-1150</p>
+                <p>Membership: Bronze 🥉</p>
                 <a href="https://www.baytown.org/877/Pirates-Bay-Waterpark" target="_blank">Details </a>
             </section>
 
             <section>
-                <img src="images/HMBaytownHospital.webp" alt="Houston Methodist Baytown Hospital" />
+                <img src="images/HMBaytownHospital.jpg" alt="Houston Methodist Baytown Hospital" />
                 <h3>Houston Methodist Baytown Hospital</h3>
                 <p>4401 Garth Rd, Baytown, TX 77521</p>
                 <p>(281) 420-8600</p>
+                <p>Membership: Silver 🥈</p>
                 <a href="https://www.houstonmethodist.org/locations/baytown/?utm_source=gmb&utm_medium=organic&utm_campaign=all_front_door_gmb&utm_content=website-click"
                     target="_blank">Details</a>
             </section>
@@ -191,14 +197,16 @@
                 <h3>Buc-ee's</h3>
                 <p>4080 East Fwy, Baytown, TX 77521</p>
                 <p>(979) 238-6390</p>
+                <p>Membership: Bronze 🥉</p>
                 <a href="http://www.buc-ees.com/" target="_blank">Details</a>
             </section>
 
             <section>
-                <img src="images/BFord.png" alt="Baytown Ford" />
+                <img src="images/BFord.jpg" alt="Baytown Ford" />
                 <h3>Baytown Ford</h3>
                 <p>4110 I-10, Baytown, TX 77521</p>
                 <p>(855) 760-2180</p>
+                <p>Membership: Silver 🥈</p>
                 <a href="https://www.baytownford.com/?utm_source=google&utm_campaign=GoogleLocalListing&utm_medium=organic"
                     target="_blank">Details</a>
             </section>
@@ -208,6 +216,7 @@
                 <h3>H-E-B</h3>
                 <p>6430 Garth Rd, Baytown, TX 77521</p>
                 <p>(281) 421-5300</p>
+                <p>Membership: Bronze 🥉</p>
                 <a href="https://www.heb.com/heb-store/US/tx/baytown/baytown-h-e-b-742?utm_source=google&utm_medium=organic&utm_campaign=gmb_stores"
                     target="_blank">Details</a>
             </section>
@@ -217,6 +226,7 @@
                 <h3>Texas Roadhouse</h3>
                 <p>6615 Garth Rd, Baytown, TX 77521</p>
                 <p>(281) 421-3060</p>
+                <p>Membership: Bronze 🥉</p>
                 <a href="https://www.texasroadhouse.com/locations/411-baytowntx" target="_blank">Details</a>
             </section>
         </article>

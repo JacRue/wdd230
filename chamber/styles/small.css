@@ -27,6 +27,12 @@
         display: none;
         /* smaller viewports only */
     }
+
+    .logo_img {
+        width: 50%;
+        height: auto;
+        border-radius: 8px;
+    }
 }
 
 * {
@@ -38,6 +44,9 @@ body {
 }
 
 header {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
     background: #17a0df;
     color: #e3ebef;
     align-items: center;
@@ -48,13 +57,14 @@ header {
 }
 
 .logo_img {
-    width: 15rem;
+    width: 10rem;
     border-radius: 8px;
+    box-shadow: 2px 2px 4px black;
 }
 
 .m {
     font-style: italic;
-    color: #0a4268;
+    color: black;
 }
 
 nav {
@@ -79,6 +89,7 @@ nav a:hover {
     border: 0;
     padding: 0.5rem;
     background-color: #17a0df;
+    text-shadow: 2px 2px 4px black;
 }
 
 /* Hamburger start-------------------------*/
@@ -125,9 +136,6 @@ nav a:hover {
 }
 
 /* Hamburger end-------------------------*/
-/* main {
-    align-items: stretch;
-} */
 
 h1 {
     color: #e3ebef;
@@ -137,11 +145,11 @@ h1 {
     display: block;
 }
 
-.flexbox-item {
+.flexbox-item{
     margin: 5px;
     border: 3px solid #333;
     background-color: #1d80e4;
-    /* height: 200px; */
+    text-align: center;
 }
 
 .flexbox-3 {
@@ -150,6 +158,10 @@ h1 {
     background-image: url('/chamber/images/weatherImage.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.flexbox-2, .flexbox-5 {
+    background-color: #bed;
 }
 
 footer {
@@ -163,7 +175,8 @@ footer {
 
 .spotlight-container {
     border: solid;
-    background-color: rgb(207, 202, 202);
+    background-color: #bed;
+    text-align: center;
 }
 
 .social {
@@ -172,7 +185,8 @@ footer {
 
 .social_img {
     border-radius: 8px;
-    border: 2px solid #333;
+    width: 75%;
+    height: auto;
     box-shadow: 4px 4px 5px 0px #04090c;
 }
 
@@ -317,21 +331,6 @@ form label.top input:required:valid {
 
 /*-------------Directory Page----------------*/
 
-/* * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-} */
-
-/* main {
-	margin: 0 auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	max-width: 800px;
-	background-color: #eee;
-	font-family: Roboto, Helvetica, sans-serif;
-} */
-
 .menu {
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -413,5 +412,61 @@ section {
 img {
     height: 75px;
     max-width: 100%;
-    /* Images are jerks - Seattle*/
+    text-align: center;
+}
+
+/*---------Contact Us Page----------------*/
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="submit"] {
+    background-color: #428bca;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #3071a9;
+}
+
+/*----style the contact information----*/
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #428bca;
+}
+
+a:hover {
+    text-decoration: underline;
 }

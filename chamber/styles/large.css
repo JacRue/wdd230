@@ -1,7 +1,7 @@
 /* Desktop Views ****************************/
 @media only screen and (min-width: 1000px) {
 	.logo_img {
-		width: 250px;
+		width: 200px;
 		height: auto;
 		border-radius: 8px;
 		margin: 8px;
@@ -12,6 +12,19 @@
 		margin: 0 auto;
 	}
 
+	.Hsection {
+		margin-left: 9%;
+	}
+
+	h1 {
+		font-size: 45px;
+	}
+
+	.m {
+		font-size: 25px;
+		font-weight: bold;
+	}
+
 	.flexbox-container {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
@@ -19,7 +32,6 @@
 
 	.spotlight-container {
 		border: solid;
-		background-color: rgb(207, 202, 202);
 		grid-row: 1/4;
 		grid-column: 4/5;
 	}
@@ -51,6 +63,7 @@
 
 	.Hero-img {
 		width: 100%;
+		height: auto;
 	}
 
 	.discoverMain {
@@ -98,5 +111,11 @@
 	.flexbox-3 {
 		font-size: 20px;
 	}
+
+	.spotlight-3 {
+        display:table;
+		width: 97%;
+		height: auto;
+    }
 	}
 

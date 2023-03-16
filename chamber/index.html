@@ -13,29 +13,31 @@
 </head>
 
 <body>
-    <header>
-        <img class=logo_img src="images/Baytown_Chamber_of_Commerce_Water.png" alt="Logo image">
-        <section class="Hsection">
-            <h1>Baytown Chambers of Commerce</h1>
-            <div class="m">City of Many Waters</div>
-        </section>
-        <div class="social">
-            <a href="https://facebook.com">
-                <img class="social_img" src="images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com">
-                <img class="social_img" src="images/twitter.png" alt="twitter icon">
-            </a>
-        </div>
-        <h3 id="date"></h3>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="discover.html">Discover</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html">Join</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+    <div>
+        <header>
+            <img class=logo_img src="images/Baytown_Chamber_of_Commerce_Water.png" alt="Logo image">
+            <section class="Hsection">
+                <h1>Baytown Chambers of Commerce</h1>
+                <div class="m">City of Many Waters</div>
+                <h3 class="date" id="date"></h3>
+            </section>
+            <div class="social">
+                <a href="https://facebook.com">
+                    <img class="social_img" src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com">
+                    <img class="social_img" src="images/twitter.png" alt="twitter icon">
+                </a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="contactUs.html">Contact</a>
+            </nav>
+        </header>
+    </div>
     <main>
 
         <!-- Simulate a smartphone / tablet -->
@@ -52,7 +54,7 @@
                 <a href="discover.html">Discover</a>
                 <a href="directory.html">Directory</a>
                 <a href="join.html">Join</a>
-                <a href="#">Contact</a>
+                <a href="contactUs.html">Contact</a>
             </div>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -72,17 +74,19 @@
                 <script src="scripts/banner.js"></script>
             </div>
             <div class="flexbox-item flexbox-2">
-                <h3>Baytown Events</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit omnis impedit maiores maxime! Corrupti
-                    atque eveniet odio quos. Nihil recusandae repellendus aliquam fugit, ea error in rem totam veniam
-                    ad?
-                </p>
+                <section>
+                    <h3>Baytown Events</h3>
+                    <img src="images/BaytownMall.jpg" alt="Plans for new mall">
+                    <p>Join us for the ground breaking of the new Baytown Mall.</p>
+                    <p>Ceremony will take place at Garth Rd and Baytown Mall Blvd.</p>
+                    <p>Event will be held at noon, sponsors will provide food and events.</p>
+                </section>
             </div>
             <div class="flexbox-item flexbox-3">
                 <h3>Baytown Weather Forcast</h3>
                 <div id="weather"></div>
                 <p>Temperature in Baytown, Texas is currently</p>
-                    <span id="current-temp"></span> &deg;F
+                <span id="current-temp"></span> &deg;F
                 <p>Current conditions are</p>
                 <figure>
                     <img src="" alt="" id="weather-icon" />
@@ -93,33 +97,50 @@
                 <span id="weatherResults"></span>
             </div>
 
-            <div class="flexbox-item flexbox-4">News Release
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur error, reprehenderit, excepturi
-                    eligendi ratione possimus rem maiores vero saepe nam, ea molestiae! Culpa a doloribus dignissimos,
-                    ut
-                    rem dolorem deserunt?</p>
+            <div class="flexbox-item flexbox-4">
+                <h3>Baytown News Release</h3>
+                <p>Welcome to Baytown Chamber of Commerce new website!
+                    Here you can keep up to date on events, and more!
+                    Check out our local buisness, and don't forget to check out 
+                    the Join page, we look forward to seeing you there! 
+
+                </p>
             </div>
             <div class="flexbox-item flexbox-5">
                 <a href="#"></a><button class="joinButton" type="button">Join Us!</button>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ullam a nisi corporis laudantium,
-                    consequuntur facilis aliquid perferendis necessitatibus, explicabo consectetur ipsum, aut saepe
-                    quasi! Vitae amet quisquam quo quae.</p>
+                <p>Discover how Baytown Chamber of Commerce can benefit your organization, click to join.</p>
             </div>
             <div class="spotlight-container">
-                <div class="flexbox-item spotlight-1">Spotlight 1
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ut rerum vel nemo doloremque tempora
-                        ipsam, quod quia neque illum animi rem sint itaque natus velit facilis vitae distinctio enim.
-                    </p>
+                <div class="flexbox-item spotlight-1">
+                    <section>
+                        <img src="images/ExxonMobil.jpg" alt="Baytown Exxon Mobil" />
+                        <h3>Exxon Mobil Baytown</h3>
+                        <p>3525 Decker Dr, Baytown, TX 77520</p>
+                        <p>(281) 834-6161</p>
+                        <p>Membership: Gold 🥇</p>
+                        <a href="http://corporate.exxonmobil.com/" target="_blank">Details</a>
+                    </section>
                 </div>
-                <div class="flexbox-item spotlight-2">Spotlight 2
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ut rerum vel nemo doloremque tempora
-                        ipsam, quod quia neque illum animi rem sint itaque natus velit facilis vitae distinctio enim.
-                    </p>
+                <div class="flexbox-item spotlight-2">
+                    <section>
+                        <img src="images/BFord.png" alt="Baytown Ford" />
+                        <h3>Baytown Ford</h3>
+                        <p>4110 I-10, Baytown, TX 77521</p>
+                        <p>(855) 760-2180</p>
+                        <p>Membership: Silver 🥈</p>
+                        <a href="https://www.baytownford.com/?utm_source=google&utm_campaign=GoogleLocalListing&utm_medium=organic"
+                            target="_blank">Details</a>
+                    </section>
                 </div>
-                <div class="flexbox-item spotlight-3">Spotlight 3
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ut rerum vel nemo doloremque tempora
-                        ipsam, quod quia neque illum animi rem sint itaque natus velit facilis vitae distinctio enim.
-                    </p>
+                <div class="flexbox-item spotlight-3">
+                    <section>
+                        <img src="images/buc-ees.jpg" alt="Baytown Buc-ee's" />
+                        <h3>Buc-ee's</h3>
+                        <p>4080 East Fwy, Baytown, TX 77521</p>
+                        <p>(979) 238-6390</p>
+                        <p>Membership: Bronze 🥉</p>
+                        <a href="http://www.buc-ees.com/" target="_blank">Details</a>
+                    </section>
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@
             "phone": "(281) 834-6161",
             "url": "http://corporate.exxonmobil.com/",
             "logo": "images/ExxonMobil.jpg",
-            "membership": ""
+            "membership": "Gold"
         },
         {
             "companyName": "Enterprise Products",
@@ -14,7 +14,7 @@
             "phone": "(713) 381-6500",
             "url": "http://www.enterpriseproducts.com/",
             "logo": "images/EnterpriseProducts.png",
-            "membership": ""
+            "membership": "Gold"
         },
         {
             "companyName": "Chevron Phillips Chemical Co",
@@ -22,7 +22,7 @@
             "phone": "(281) 421-6500",
             "url": "http://www.cpchem.com/baytown",
             "logo": "images/ChevronPhillips.jpg",
-            "membership": ""
+            "membership": "Gold"
         },
         {
             "companyName": "Pirates Bay Waterpark",
@@ -30,7 +30,7 @@
             "phone": "(281) 422-1150",
             "url": "https://www.baytown.org/877/Pirates-Bay-Waterpark",
             "logo": "images/PiratesBay1.png",
-            "membership": ""
+            "membership": "Bronze"
         },
         {
             "companyName": "Houston Methodist Baytown Hospital",
@@ -38,7 +38,7 @@
             "phone": "(281) 420-8600",
             "url": "https://www.houstonmethodist.org/locations/baytown/?utm_source=gmb&utm_medium=organic&utm_campaign=all_front_door_gmb&utm_content=website-click",
             "logo": "images/HMBaytownHospital.webp",
-            "membership": ""
+            "membership": "Silver"
         },
         {
             "companyName": "Buc-ee's",
@@ -46,7 +46,7 @@
             "phone": "(979) 238-6390",
             "url": "http://www.buc-ees.com/",
             "logo": "images/buc-ees.jpg",
-            "membership": ""
+            "membership": "Bronze"
         },
         {
             "companyName": "Baytown Ford",
@@ -54,7 +54,7 @@
             "phone": "(855) 760-2180",
             "url": "https://www.baytownford.com/?utm_source=google&utm_campaign=GoogleLocalListing&utm_medium=organic",
             "logo": "images/BFord.png",
-            "membership": ""
+            "membership": "Silver"
         },
         {
             "companyName": "H-E-B",
@@ -62,7 +62,7 @@
             "phone": "(281) 421-5300",
             "url": "https://www.heb.com/heb-store/US/tx/baytown/baytown-h-e-b-742?utm_source=google&utm_medium=organic&utm_campaign=gmb_stores",
             "logo": "images/HEB_curbside_logos.jpg",
-            "membership": ""
+            "membership": "Bronze"
         },
         {
             "companyName": "Texas Roadhouse",
@@ -70,7 +70,7 @@
             "phone": "(281) 421-3060",
             "url": "https://www.texasroadhouse.com/locations/411-baytowntx",
             "logo": "images/TexasRoadhouse.jpg",
-            "membership": ""
+            "membership": "Bronze"
         }
     ]
 }
