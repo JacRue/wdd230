@@ -156,7 +156,6 @@ h1 {
     text-align: center;
     font-weight: bold;
     background-color: #bed;
-    background-image: url('/chamber/images/weatherImage.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
