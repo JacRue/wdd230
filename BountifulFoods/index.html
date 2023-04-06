@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img class="logoImg" src="images/logo.png" alt="Bountiful Foods logo">
+            <nav class="primaryNav">
+                <a href="index.html">Home</a>
+                <a href="fresh.html">Fresh</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contactUs.html">Contact</a>
+            </nav>
+            <div class="social">
+                <a href="https://facebook.com">
+                    <img class="social_img" src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com">
+                    <img class="social_img" src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img class="social_img" src="images/Instagram.jpg" alt="instagram icon">
+                </a>
+            </div>
+        </header>
+        <!-- Simulate a smartphone / tablet -->
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active">Menu</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="fresh.html">Fresh</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contactUs.html">Contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- End smartphone / tablet look -->
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/HeroImgBountifulFoods.jpg" alt="White smoke, black background">
+            </div>
+            <section id="hero-msg">
+                <h1 class="home-title">Culinary Excellence</h1>
+                <h4>Make Memories and Healty Choices with Bountiful Foods</h4>
+            </section>
+        </div>
+        <div class="h2Vist">
+            <h2>Locations We Frequently Visit</h2>
+        </div>
+        <main class="home-grid">
+            <section class="SumCoast1">
+                <picture>
+                    <img class="card-img" src="images/FavIconJuice.jpg" data-src="images\OceansideCA.jpg" 
+                    alt="Oceanside California Beach" loading="lazy">
+                </picture>
+                <h3>Oceanside, CA</h3>
+                <p> Coastal city in California. It's known for palm-dotted Harbor Beach and nearby
+                    Oceanside Harbor, with its marina and shops. To the south, the long Oceanside Pier juts into the
+                    Pacific Ocean. The California Surf Museum traces the sport's history with a surfboard collection and
+                    exhibits on famous surfers. Sculptures, paintings and drawings from the region are on display at the
+                    Oceanside Museum of Art.</p>
+            </section>
+            <section class="SumCoast2">
+                <picture>
+                    <img class="card-img" src="images/FavIconJuice.jpg" data-src="images\sanDeigoBeach.jpg" 
+                    alt="San Diego California Beach" loading="lazy">
+                </picture>
+                <h3>San Diego, CA</h3>
+                <p> San Diego is a city on the Pacific coast of California known for its beaches, parks and warm
+                    climate. Immense Balboa Park is the site of the renowned San Diego Zoo, as well as numerous art
+                    galleries, artist studios, museums and gardens. A deep harbor is home to a large active naval fleet,
+                    with the USS Midway, an aircraft-carrier-turned-museum, open to the public.</p>
+            </section>
+            <section class="Call">
+                <h2>Call to Action</h2>
+                <p>There are many reasons why people should eat fresh fruit. Here are some of the key benefits:</p>
+
+                <p>1. Nutrient-rich: Fresh fruits are packed with nutrients like vitamins, minerals, and fiber that are
+                    essential for good health.</p>
+
+                <p>2. Low in calories: Most fresh fruits are low in calories, making them a great snack or addition to
+                    a meal for those looking to maintain a healthy weight.</p>
+
+                <p>3. Hydration: Fresh fruits are high in water content, which can help keep the body hydrated and
+                    regulate body temperature.</p>
+
+                <p>4. Antioxidants: Many fresh fruits are rich in antioxidants, which can help protect the body from
+                    damage caused by free radicals.</p>
+
+                <p>5. Improved digestion: Fresh fruits are a great source of fiber, which can help improve digestion
+                    and prevent constipation.</p>
+
+                <p>6. Improved heart health: Eating fresh fruits can help reduce the risk of heart disease by lowering
+                    blood pressure, reducing inflammation, and improving cholesterol levels.</p>
+
+                <p>Overall, incorporating fresh fruits into your diet can provide a range of health benefits and help
+                    you maintain a balanced and nutritious diet.</p>
+                <div class="button-box">
+                    <a class="order" href="fresh.html">Start Your Order</a>
+                </div>
+            </section>
+            <section class="PastOrders">
+                <h3>Past Order Count</h3>
+                <div id="totalSpecialtyDrinks">Total specialty drinks submitted: 0</div>
+            </section>
+            <div class="Weather">
+                <h2>Weather</h2>
+                <div id="weather"></div>
+                <p>Temperature in Carlsbad, California is currently</p>
+                <span id="current-temp"></span> &deg;F
+                <p>Current conditions are</p>
+                <figure>
+                    <img src="" alt="" id="weather-icon">
+                    <figcaption></figcaption>
+                </figure>
+                <p id="wind-speed"></p>
+                <p id="wind-chill"></p>
+                <p id="humidity"></p>
+                <!-- 3-Day Forecast-->
+                <div id="forecast">
+                    <!-- forecast items will be added dynamically here -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <h3>&copy;2023 Bountiful Foods | 123 Health Food Blvd | (801) 123-5555 | Website last modified:
+        </h3>
+        <p id="updated"></p>
+    </footer>
+    <script src="scripts/Updates.js"></script>
+    <script src="scripts/weatherInfo.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/formHandler.js"></script>
+</body>
+
+</html>

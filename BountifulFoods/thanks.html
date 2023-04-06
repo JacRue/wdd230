@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods Fresh page</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img class="logoImg" src="images/logo.png" alt="Bountiful Foods logo">
+            <nav class="primaryNav">
+                <a href="index.html">Home</a>
+                <a href="fresh.html">Fresh</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contactUs.html">Contact</a>
+            </nav>
+            <div class="social">
+                <a href="https://facebook.com">
+                    <img class="social_img" src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com">
+                    <img class="social_img" src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img class="social_img" src="images/Instagram.jpg" alt="instagram icon">
+                </a>
+            </div>
+        </header>
+        <!-- Simulate a smartphone / tablet -->
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active">Menu</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="fresh.html">Fresh</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contactUs.html">Contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- End smartphone / tablet look -->
+    </div>
+    <div class="home-grid">
+        <main class="ThanksMain">
+            <h2 class="ThanksH2">Contact Application</h2>
+            <p class="ThanksP">
+                Your Application has been submitted, thank you for your time and we look forward to reaching out to you
+                soon....
+            </p>
+        </main>
+    </div>
+    </main>
+    <footer>
+        <h3>&copy;2023 Bountiful Foods | 123 Health Food Blvd | (801) 123-5555 | Website last modified:
+        </h3>
+        <p id="updated"></p>
+    </footer>
+    <script src="scripts/Updates.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods Fresh page</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img class="logoImg" src="images/logo.png" alt="Bountiful Foods logo">
+            <nav class="primaryNav">
+                <a href="index.html">Home</a>
+                <a href="fresh.html">Fresh</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contactUs.html">Contact</a>
+            </nav>
+            <div class="social">
+                <a href="https://facebook.com">
+                    <img class="social_img" src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com">
+                    <img class="social_img" src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img class="social_img" src="images/Instagram.jpg" alt="instagram icon">
+                </a>
+            </div>
+        </header>
+        <!-- Simulate a smartphone / tablet -->
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active">Menu</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="fresh.html">Fresh</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contactUs.html">Contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- End smartphone / tablet look -->
+    </div>
+    <main class="home-grid">
+        <h1 class="h1-fresh">Build Your Own Specialty Drink</h1>
+        <div class="smoothiePics">
+            <picture>
+                <img class="smoothie" src="images/FavIconJuice.jpg" data-src="images\ExoticSmoothie.jpg"
+                    alt="Exotic Smoothie" loading="lazy">
+            </picture>
+            <picture>
+                <img class="smoothie" src="images/FavIconJuice.jpg" data-src="images\SmoothieChart.jpg"
+                    alt="Smoothie Chart" loading="lazy">
+            </picture>
+            <picture>
+                <img class="smoothie" src="images/FavIconJuice.jpg" data-src="images\Smoothie.jpg" alt="Smoothie"
+                    loading="lazy">
+            </picture>
+        </div>
+        <form id="orderForm">
+            <fieldset>
+                <legend>Guest Information</legend>
+                <label class="formGroup" for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label class="formGroup" for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label class="formGroup" for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+                <label class="formGroup" for="fruit1">Fruit 1:</label>
+                <select id="fruit1" name="fruit1" required></select>
+
+                <label class="formGroup" for="fruit2">Fruit 2:</label>
+                <select id="fruit2" name="fruit2" required></select>
+
+                <label class="formGroup" for="fruit3">Fruit 3:</label>
+                <select id="fruit3" name="fruit3" required></select>
+
+                <label class="formGroup" for="specialInstructions">Special Instructions:</label>
+                <textarea id="specialInstructions" name="specialInstructions"></textarea>
+
+                <input type="submit" value="submit" class="submitBtn">
+            </fieldset>
+        </form>
+        <div id="outputContainer"></div>
+    </main>
+    <footer>
+        <h3>&copy;2023 Bountiful Foods | 123 Health Food Blvd | (801) 123-5555 | Website last modified:
+        </h3>
+        <p id="updated"></p>
+    </footer>
+    <script src="scripts/Updates.js"></script>
+    <script src="scripts/formHandler.js"></script>
+    <script src="scripts/lazyload.js"></script>
+</body>
+
+</html>

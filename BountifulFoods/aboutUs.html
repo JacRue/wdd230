@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods Fresh page</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img class="logoImg" src="images/logo.png" alt="Bountiful Foods logo">
+            <nav class="primaryNav">
+                <a href="index.html">Home</a>
+                <a href="fresh.html">Fresh</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contactUs.html">Contact</a>
+            </nav>
+            <div class="social">
+                <a href="https://facebook.com">
+                    <img class="social_img" src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com">
+                    <img class="social_img" src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img class="social_img" src="images/Instagram.jpg" alt="instagram icon">
+                </a>
+            </div>
+        </header>
+        <!-- Simulate a smartphone / tablet -->
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active">Menu</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="fresh.html">Fresh</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contactUs.html">Contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- End smartphone / tablet look -->
+    </div>
+    <main class="home-grid">
+        <div class="aboutUs">
+            <h1>About Us</h1>
+            <img class="aboutUsPic" src="images/organicFarm.jpg" alt="">
+            <!-- <h2>Bountiful Foods</h2>
+            <p>Is a small business specializing in organic, locally grown foods. We are physically located in Carlsbad,
+                California, however, we have many food trucks that cover the coastal area from Los Angeles to San
+                Diego. Our company sells fruits and produce directly from the farmers in the area, but also uses some
+                national and international suppliers. We are a owner-operated company that caters to walk in traffic at our
+                storefront in Carlsbad and, of course, our food trucks. We deliver and manage those orders on the
+                phone and via the website. Our mission is to provide fresh and healthy food options, including organic,
+                made to order, fruit drinks and fruit bags, to the local population and to tourists visiting the coastal
+                areas.</p> -->
+        </div>
+        <div class="aboutUsP">
+            <h2>Bountiful Foods</h2>
+            <p>Is a small business specializing in organic, locally grown foods. We are physically located in Carlsbad,
+                California, however, we have many food trucks that cover the coastal area from Los Angeles to San
+                Diego. Our company sells fruits and produce directly from the farmers in the area, but also uses some
+                national and international suppliers. We are a owner-operated company that caters to walk in traffic at
+                our
+                storefront in Carlsbad and, of course, our food trucks. We deliver and manage those orders on the
+                phone and via the website. Our mission is to provide fresh and healthy food options, including organic,
+                made to order, fruit drinks and fruit bags, to the local population and to tourists visiting the coastal
+                areas.</p>
+        </div>
+    </main>
+    <footer>
+        <h3>&copy;2023 Bountiful Foods | 123 Health Food Blvd | (801) 123-5555 | Website last modified:
+        </h3>
+        <p id="updated"></p>
+    </footer>
+    <script src="scripts/Updates.js"></script>
+</body>
+
+</html>

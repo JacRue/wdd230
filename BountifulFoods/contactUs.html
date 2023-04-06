@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods Contact Us page</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img class="logoImg" src="images/logo.png" alt="Bountiful Foods logo">
+            <nav class="primaryNav">
+                <a href="index.html">Home</a>
+                <a href="fresh.html">Fresh</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contactUs.html">Contact</a>
+            </nav>
+            <div class="social">
+                <a href="https://facebook.com">
+                    <img class="social_img" src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com">
+                    <img class="social_img" src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img class="social_img" src="images/Instagram.jpg" alt="instagram icon">
+                </a>
+            </div>
+        </header>
+        <!-- Simulate a smartphone / tablet -->
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active">Menu</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="fresh.html">Fresh</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contactUs.html">Contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- End smartphone / tablet look -->
+    </div>
+    <main class="home-grid">
+        <div class="contactUs">
+            <form method="get" action="thanks.html">
+                <h1>Contact Us</h1>
+                <p>Thank you for your interest in contacting us. Please fill out the form below and we will get back to
+                    you
+                    as
+                    soon as possible</p>
+
+                <form action="process-form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea><br>
+
+                    <input type="submit" value="Send">
+                </form>
+            </form>
+
+            <p>Alternatively, you can contact us using the following methods:</p>
+
+            <ul>
+                <li>Email: <a href="mailto:bountifulfoods@gmail.com">bountifulfoods@gmail.com</a></li>
+                <li>Phone: 1-801-123-5555 (Monday through Saturday, 10am-10pm)</li>
+                <li>Address: 123 Health Food Blvd, Carlsbad, CA 92008</li>
+                <li>Social Media:
+                    <ul>
+                        <li>Facebook: <a href="https://facebook.com">Facebook.com</a></li>
+                        <li>Twitter: <a href="https://twitter.com">Twitter.com</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <h3>&copy;2023 Bountiful Foods | 123 Health Food Blvd | (801) 123-5555 | Website last modified:
+        </h3>
+        <p id="updated"></p>
+    </footer>
+    <script src="scripts/Updates.js"></script>
+</body>
+
+</html>
